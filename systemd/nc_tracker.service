@@ -1,0 +1,18 @@
+[Unit]
+Description=nc tracker
+After=syslog.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/home/nextcolony/
+ExecStart=/home/nextcolony/nc_tracker.sh
+SyslogIdentifier=nc_racker
+StandardOutput=syslog
+StandardError=syslog
+Restart=always
+RestartSec=60
+
+[Install]
+WantedBy=multi-user.target

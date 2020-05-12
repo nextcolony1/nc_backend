@@ -1,0 +1,18 @@
+[Unit]
+Description=nc auction
+After=syslog.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/home/nextcolony/utils
+ExecStart=/home/nextcolony/nc_auction.sh
+SyslogIdentifier=nc_racker
+StandardOutput=syslog
+StandardError=syslog
+Restart=always
+RestartSec=60
+
+[Install]
+WantedBy=multi-user.target

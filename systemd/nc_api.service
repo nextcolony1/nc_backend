@@ -1,0 +1,20 @@
+[Unit]
+Description = nc REST API server
+After = network.target
+
+[Service]
+PermissionsStartOnly = true
+PIDFile = /run/nc/nc.pid
+User = root
+Group = root
+WorkingDirectory = /opt/nc
+ExecStartPre = /bin/mkdir /run/nc
+ExecStartPre = /bin/chown -R nc:nc /run/nc
+ExecStart = /usr/bin/env gunicorn --certfile /etc/letsencrypt/live/nextcolony.io-0001/fullchain.pem --keyfile /etc/letsencrypt/live/nextcolony.io-0001/privkey.pem  --workers=4 app:app -b 0.0.0.0:5000 --pid /run/nc/nc.pid
+ExecReload = /bin/kill -s HUP $MAINPID
+ExecStop = /bin/kill -s TERM $MAINPID
+ExecStopPost = /bin/rm -rf /run/nc
+PrivateTmp = true
+
+[Install]
+WantedBy = multi-user.target
