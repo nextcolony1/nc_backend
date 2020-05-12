@@ -1,0 +1,5 @@
+INSERT INTO `shipstats` (`name`, `longname`, `class`, `variant`, `variant_name`, `level`, `speed`, `consumption`, `structure`, `armor`, `shield`, `rocket`, `bullet`, `laser`, `capacity`, `shipyard_level`) VALUES ('explorership1', 'Explorer II', 'Explorer', '1', 'civil', '1', '6', '0.1', '45', '0', '0', '0', '0', '0', '0', '18');
+INSERT INTO `shop` (`id`, `name`, `itemid`, `prefix`, `tradeble`, `activateable`, `sales_per_day`, `max_supply`, `apply_to`, `price`, `duration`, `ore`, `coal`, `copper`, `uranium`, `boost_percentage`, `blueprint`) VALUES ('14', 'Explorer II', 'blueprint_08', 'BP8-', '1', '1', '-1', '5000', 'planet', '0.001', NULL, NULL, NULL, NULL, NULL, NULL, 'explorership1');
+INSERT INTO `upgradecosts` (`id`, `name`, `level`, `coal`, `ore`, `copper`, `uranium`, `upgrade_time`) VALUES (NULL, 'explorership1', '1', '3072', '1536', '768', '461', '61714.28571');
+UPDATE `shop` SET `max_supply` = '2000', `price` = '29' WHERE `shop`.`itemid` = 'blueprint_08';
+UPDATE `shipstats` SET `shipyard_level` = '14' WHERE `shipstats`.`name` = 'explorership1';

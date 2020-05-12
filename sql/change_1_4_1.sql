@@ -1,0 +1,23 @@
+ALTER TABLE `users` ADD `r_depotincrease` INT NULL AFTER `r_siegeprolongation`;
+ALTER TABLE `users` ADD `r_depotincrease_busy` DATETIME NULL AFTER `r_siegeprolongation_busy`;
+
+INSERT INTO `skillcosts` (`id`, `name`, `level`, `coal`, `ore`, `copper`, `uranium`, `research_time`) VALUES (NULL, 'depotincrease', '1', '1520', '760', '380', '228', '190883.7209');
+INSERT INTO `skillcosts` (`id`, `name`, `level`, `coal`, `ore`, `copper`, `uranium`, `research_time`) VALUES (NULL, 'depotincrease', '2', '1596', '798', '399', '239.4', '190883.7209');
+INSERT INTO `skillcosts` (`id`, `name`, `level`, `coal`, `ore`, `copper`, `uranium`, `research_time`) VALUES (NULL, 'depotincrease', '3', '1672', '836', '418', '250.8', '190883.7209');
+INSERT INTO `skillcosts` (`id`, `name`, `level`, `coal`, `ore`, `copper`, `uranium`, `research_time`) VALUES (NULL, 'depotincrease', '4', '1748', '874', '437', '262.2', '190883.7209');
+INSERT INTO `skillcosts` (`id`, `name`, `level`, `coal`, `ore`, `copper`, `uranium`, `research_time`) VALUES (NULL, 'depotincrease', '5', '1824', '912', '456', '273.6', '190883.7209');
+INSERT INTO `skillcosts` (`id`, `name`, `level`, `coal`, `ore`, `copper`, `uranium`, `research_time`) VALUES (NULL, 'depotincrease', '6', '1900', '950', '475', '285', '190883.7209');
+INSERT INTO `skillcosts` (`id`, `name`, `level`, `coal`, `ore`, `copper`, `uranium`, `research_time`) VALUES (NULL, 'depotincrease', '7', '1976', '988', '494', '296.4', '190883.7209');
+INSERT INTO `skillcosts` (`id`, `name`, `level`, `coal`, `ore`, `copper`, `uranium`, `research_time`) VALUES (NULL, 'depotincrease', '8',  '2052', '1026', '513', '307.8', '190883.7209');
+INSERT INTO `skillcosts` (`id`, `name`, `level`, `coal`, `ore`, `copper`, `uranium`, `research_time`) VALUES (NULL, 'depotincrease', '9', '2128', '1064', '532', '319.2', '190883.7209');
+INSERT INTO `skillcosts` (`id`, `name`, `level`, `coal`, `ore`, `copper`, `uranium`, `research_time`) VALUES (NULL, 'depotincrease', '10', '2204', '1102', '551', '330.6', '190883.7209');
+INSERT INTO `skillcosts` (`id`, `name`, `level`, `coal`, `ore`, `copper`, `uranium`, `research_time`) VALUES (NULL, 'depotincrease', '11', '2280', '1140', '570', '342', '190883.7209');
+INSERT INTO `skillcosts` (`id`, `name`, `level`, `coal`, `ore`, `copper`, `uranium`, `research_time`) VALUES (NULL, 'depotincrease', '12', '2356', '1178', '589', '353.4', '190883.7209');
+INSERT INTO `skillcosts` (`id`, `name`, `level`, `coal`, `ore`, `copper`, `uranium`, `research_time`) VALUES (NULL, 'depotincrease', '13', '2432', '1216', '608', '364.8', '190883.7209');
+INSERT INTO `skillcosts` (`id`, `name`, `level`, `coal`, `ore`, `copper`, `uranium`, `research_time`) VALUES (NULL, 'depotincrease', '14', '2508', '1254', '627', '376.2', '190883.7209');
+INSERT INTO `skillcosts` (`id`, `name`, `level`, `coal`, `ore`, `copper`, `uranium`, `research_time`) VALUES (NULL, 'depotincrease', '15', '2584', '1292', '646', '387.6', '190883.7209');
+INSERT INTO `skillcosts` (`id`, `name`, `level`, `coal`, `ore`, `copper`, `uranium`, `research_time`) VALUES (NULL, 'depotincrease', '16', '2660', '1330', '665', '399', '190883.7209');
+INSERT INTO `skillcosts` (`id`, `name`, `level`, `coal`, `ore`, `copper`, `uranium`, `research_time`) VALUES (NULL, 'depotincrease', '17', '2736', '1368', '684', '410.4', '190883.7209');
+INSERT INTO `skillcosts` (`id`, `name`, `level`, `coal`, `ore`, `copper`, `uranium`, `research_time`) VALUES (NULL, 'depotincrease', '18', '2812', '1406', '703', '421.8', '190883.7209');
+INSERT INTO `skillcosts` (`id`, `name`, `level`, `coal`, `ore`, `copper`, `uranium`, `research_time`) VALUES (NULL, 'depotincrease', '19', '2888', '1444', '722', '433.2', '190883.7209');
+INSERT INTO `skillcosts` (`id`, `name`, `level`, `coal`, `ore`, `copper`, `uranium`, `research_time`) VALUES (NULL, 'depotincrease', '20', '2964', '1482', '741', '444.6', '190883.7209');

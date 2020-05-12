@@ -1,0 +1,1 @@
+ALTER TABLE `ships` ADD INDEX( `type`, `user`, `cords_hor`, `cords_ver`);

@@ -1,0 +1,1 @@
+ALTER TABLE `status` ADD `tracker_stop_block_num` INT NOT NULL DEFAULT '0' AFTER `latest_block_num`, ADD `last_steem_block_num` INT NOT NULL DEFAULT '0' AFTER `tracker_stop_block_num`, ADD `first_unprocessed_block_num` INT NOT NULL DEFAULT '0' AFTER `last_steem_block_num`;

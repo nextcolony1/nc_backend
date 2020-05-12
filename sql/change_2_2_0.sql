@@ -1,0 +1,1 @@
+ALTER TABLE `asks` ADD `utype` VARCHAR(100) AS (CONCAT(subcategory,"/",type)) STORED AFTER `type`;

@@ -1,0 +1,1 @@
+ALTER TABLE `status` ADD `last_data_fix_date` TIMESTAMP NULL DEFAULT NULL AFTER `first_unprocessed_block_num`;
