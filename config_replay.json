@@ -1,0 +1,3 @@
+{
+        "databaseConnector": "mysql://root:PASSWORD@localhost/replay?charset=utf8mb4"
+}
